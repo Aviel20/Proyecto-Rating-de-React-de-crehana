@@ -1,0 +1,654 @@
+/*CUERPO*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-width: 640px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* HEADER */
+header{
+    width: 100%;
+    height: auto;
+}
+header .contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+}
+header .bar{
+    display: none;
+}
+header .bar-menu{
+    display: none;
+}
+header .sepa1{
+    width: 100%;
+    height: 20px;
+    background-color: #2D2767;
+}
+header .sepa2{
+    width: 100%;
+    height: 20px;
+    background-color: #2A83BF;
+}
+header .logo{
+    margin-left: 64px;
+}
+header .buscar input{
+    width: 250px;
+    height: 28px;
+    border-radius: 28px;
+    border-color: none;
+    border: 0;
+    outline: none;
+}
+header .buscar{
+    margin-right: 64px;
+    display: flex;
+    align-items: center;
+}
+header .buscar input::placeholder{
+    padding-left: 20px;
+}
+header .buscar input:focus{
+    outline: none;
+}
+header .nave{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header .nave a{
+    padding-right: 40px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+header .nave a:hover{
+    color: rgb(165, 165, 165);
+}
+/* HEADER */
+
+/* BIENVENIDA */
+.bienvenido{
+    width: 100%;
+    height: 690px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+}
+.bienvenido .contenido{
+    width: 100%;
+    height: 100%;
+}
+.bienvenido .contenido .slider{
+    width: 300%;
+    height: 100%;
+    display: flex;
+
+}
+.bienvenido .contenido .slider .slide{
+    width: 100%;
+    height: 100%;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.bienvenido .contenido .slider .foto1{
+    background-image: url("../img/slide1.png");
+}
+.bienvenido .contenido .slider .foto2{
+    background-image: url("../img/slide2.png");
+}
+.bienvenido .contenido .slider .foto3{
+    background-image: url("../img/slide3.png");
+}
+    /* BIENVENIDA */
+
+    /* INFORMACION */
+.informacion{
+    width: 100%;
+    height: 460px;
+    background-color: rgb(250, 250, 250);
+}
+.informacion .contenido{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 2.5%;
+}
+.informacion .contenido .a{
+    background-color: #d3d3d386;
+    width: 20%;
+    height: auto;
+    max-height: 380px;
+    min-height: 312.16px;
+    margin:  20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    /*padding: 0.5%;
+    */border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+} 
+.informacion .contenido .a img{
+    margin-top: 20px;
+    width: 86%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.informacion .contenido .a .titulo{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.informacion .info{
+    position: relative;
+    visibility: hidden;
+    width: 50%;
+    height: auto;
+    min-height: 312.16px;
+    max-height: 380px;
+    background-color: #d3d3d386;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: none;
+}
+.informacion .info h3{
+    font-size: 28px;
+    color: rgb(47, 47, 47);
+    margin-top: 8%;
+}
+.informacion .info p{
+    width: 80%;
+    line-height: 20px;
+    margin: auto;
+}
+.informacion .info i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 8px;
+    width: 48px;
+    height: 48px;
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    background-color: rgba(56, 56, 56, 0.655);
+    /*right: 0;
+    */border-radius: 0 10px 0 30px;
+    -webkit-border-radius:0 10px 0 30px;
+    -moz-border-radius:0 10px 0 30px;
+    -ms-border-radius:0 10px 0 30px;
+    -o-border-radius:0 10px 0 30px;
+    cursor: pointer;
+}
+/* INFORMACION */
+
+/* CATALOGO */
+.catalogo .contenido .lista h3{
+    margin-top: 30px;
+    font-size: 30px;
+    color: rgb(47, 47, 47);
+    text-align: center;
+}
+.catalogo .contenido .lista .menu{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.catalogo .contenido .lista .menu ul{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.catalogo .contenido .lista .menu button{
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #2A83BF;
+    color: white;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: none;
+}
+.catalogo .contenido .lista .menu button:focus{
+    background-color: #2D2767;
+    color: white;
+    
+}
+.catalogo .contenido .inventario{
+    height: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.catalogo .contenido .inventario .e{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 96%;
+    height: 540px;
+    background-color: rgb(211, 211, 211);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.catalogo .contenido .inventario .prod {
+    background-color: rgb(255, 255, 255);
+    width: 22%;
+    height: 80%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.catalogo .contenido .inventario .e  h3{
+    font-size: 24px;
+    margin: 10px 0;
+    color: rgb(47, 47, 47);
+}
+.catalogo .contenido .inventario .e  p{
+    font-size: 16px;
+    margin: 8px 0;
+}
+.catalogo .contenido .inventario  img{
+    width: 100%;
+    height: 70%;
+    border-radius: 10px  10px 0 0;
+    -webkit-border-radius: 10px  10px 0 0;
+    -moz-border-radius: 10px  10px 0 0;
+    -ms-border-radius: 10px  10px 0 0;
+    -o-border-radius: 10px  10px 0 0;
+}
+.catalogo .contenido .inventario .botas{
+    display: none;
+}
+.catalogo .contenido .inventario .cascos{
+    display: none;
+}
+.catalogo .contenido .inventario .guantes{
+    display: none;
+}
+
+/* CATALOGO */
+
+/* CONTACTO */
+.formulario .contenido .informacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(../img/parallax.png);
+}
+.formulario .contenido .informacion .encuen{
+    background-color: #c4c4c4;
+    width: 300px;
+    height: 160px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.formulario .contenido .informacion .encuen h3{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 26px;
+    color: rgb(47, 47, 47);
+}
+.formulario .contenido .informacion .encuen .conc{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.formulario .contenido .informacion .encuen .conc a{
+    width: 30px;
+    height: 30px;
+}
+.formulario .contenido .informacion .encuen .conc i{
+    width: 30px;
+    height: 30px;
+    font-size: 34px;
+    color: #010545;
+}
+.formulario .contenido .informacion .visit{
+    background-color: #c4c4c4;
+    width: 300px;
+    height: 160px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.formulario .contenido .informacion .visit h3{
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 26px;
+    color: rgb(47, 47, 47);
+}
+.formulario .contenido .informacion .visit p{
+    font-size: 14px;
+    padding: 0 14px;
+    line-height: 20px;
+}
+.formulario .contenido .informacion .hora{
+    background-color: #c4c4c4;
+    width: 300px;
+    height: 160px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.formulario .contenido .informacion .hora h3{
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 26px;
+    color: rgb(47, 47, 47);
+}
+.formulario .contenido .informacion .hora p{
+    font-size: 14px;
+    padding: 0 14px;
+    line-height: 20px;
+    text-align: center;
+}
+.formulario .contenido .formu{
+    display: flex;
+    justify-content: center;
+}
+.formulario .contenido .formu form{
+    width: 400px;
+    height: 360px;
+    background-color: #c4c4c4;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-top:120px;
+    margin-bottom: 60px;
+}
+.formulario .contenido .formu form h3{
+    color: rgb(47, 47, 47);
+    font-size: 32px;
+}
+.formulario .contenido .formu form input{
+    width: 320px;
+    height: 36px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: none;
+    padding-left: 5px;
+    font-size: 18px;
+    font: 400;
+    outline-color: #c4c4c4;
+}
+.formulario .contenido .formu form textarea{
+    width: 320px;
+    max-width: 320px;
+    min-width: 320px;
+    height: 160px;
+    max-height: 160px;
+    min-height: 160px;
+    font-size: 19px;  
+    font: 400;      
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: none;
+    padding:0 5px;
+    outline-color: #c4c4c4;
+}
+.formulario .contenido .formu form input:nth-child(5){
+    width: 80px;
+    font-size: 18px;  
+    font: 300;
+}
+/* CONTACTO */
+
+/* FOOTER */
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(47, 47, 47);
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+footer p{
+    color: white;
+    font-size: 24px;
+    width: 100%;
+}
+/* FOOTER */
+
+/* MEDIA QUERY */
+@media all and (min-width:1200px){
+    .informacion .info h3{
+        margin-top: 60px;
+    }
+}
+@media all and (max-width:960px){
+    /*HEADER*/
+    header .logo{
+        margin-left: 10px;
+    }
+    header .buscar{
+        margin-right: 10px;
+    }
+    /*HEADER*/
+    /*BIENVENIDO*/
+    .bienvenido{
+        height: 500px;
+    }
+    /*BIENVENIDO*/
+    /* INFORMACION */
+    .informacion .contenido .a{
+        margin: 0;
+        min-height: 260px;
+    }
+    .informacion .info{
+        min-height: 260px;
+    }
+    .informacion .contenido .a img{
+        height: 90%;
+    }
+    .informacion .contenido .a .titulo{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    /* INFORMACION */
+    /* CATALOGO*/
+    .catalogo .contenido .inventario .prod {
+        width: 46%;
+        height: 42%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+    }
+    .catalogo .contenido .inventario  img{
+        width: 56%;
+        height: 100%;
+        border-radius: 10px 0 0 10px;
+        -webkit-border-radius: 10px 0 0 10px;
+        -moz-border-radius: 10px 0 0 10px;
+        -ms-border-radius: 10px 0 0 10px;
+        -o-border-radius: 10px 0 0 10px;
+    }
+    .catalogo .contenido .inventario .e .prod h3{
+        margin-top: 30px;
+        margin-right: 10px;
+    }
+    .catalogo .contenido .inventario .e .prod p{
+        margin-top:20px;
+        margin-right: 10px;
+    }
+    /* CATALOGO*/
+
+    /* CONTACTO*/
+    .formulario .contenido .informacion{
+        height: 600px;
+        flex-direction: column;
+    }
+
+    /* CONTACTO*/
+}
+@media all and (max-width:860px){
+    /* HEADDER */
+    header .contenedor .nave, .buscar, .buscar .conte{
+        display: none;
+    }
+    header .logo{
+        width: 130px;
+        height: 130px;
+    }
+    header .bar-menu{
+        display: felx;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 160px;
+        transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        -o-transition: all 1s ease;
+}
+    header .bar{
+        display:flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 80px;
+        width: 130px;
+        height: 130px;
+        color: white;
+        cursor: pointer;
+    }
+    .bar i{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    header .nave-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    }
+    header .nave-bar a{
+        margin: auto;
+    padding-right: 40px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    }
+    header .nave-bar a:hover{
+        color: rgb(165, 165, 165);
+    }
+    header .buscar-bar input{
+    width: 250px;
+    height: 28px;
+    border-radius: 28px;
+    border-color: none;
+    border: 0;
+    outline: none;
+    }
+    /* HEADDER */
+    /* CATALOGO */
+    .catalogo .contenido .inventario .prod {
+    width: 46%;
+    height: 46%;
+    flex-direction: column;
+    }
+    .catalogo .contenido .inventario .e  h3{
+    font-size: 18;
+    }
+    .catalogo .contenido .inventario .e  p{
+    font-size: 12px;
+    }
+    /* CATALOGO */
+}
+@media all and (max-width:860px){
+    .informacion .info h3{
+    font-size: 18px;
+    }
+}
+/* MEDIA QUERY */

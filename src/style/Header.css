@@ -1,0 +1,9 @@
+.c{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 140px;
+    margin-right: 80px;
+}
+.c h2{
+    font-size: 32px;
+}

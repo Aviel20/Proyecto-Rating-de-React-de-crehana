@@ -1,0 +1,20 @@
+.cBody{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.cBody .car{
+    text-align: center;
+}
+.ContendorCajas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.ContendorCajas h3{
+    text-align: center;
+    padding-bottom: 35px;
+}

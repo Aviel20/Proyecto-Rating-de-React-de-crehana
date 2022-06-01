@@ -1,0 +1,10 @@
+.cRanting{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 100px;
+}
+.cRanting p{
+    margin-top: 20px;
+}
